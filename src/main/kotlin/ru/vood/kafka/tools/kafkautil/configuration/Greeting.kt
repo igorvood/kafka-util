@@ -4,5 +4,4 @@ package ru.vood.kafka.tools.kafkautil.configuration
 data class Greeting(
     var msg: String,
     val name: String
-) {
-}
+)
