@@ -16,14 +16,14 @@ class KafkaTopicConfig {
     @Value(value = "\${kafka.bootstrapAddress}")
     private var bootstrapAddress: String = "null"
 
-    @Bean
+//    @Bean
     fun kafkaAdmin(): KafkaAdmin {
         val configs: MutableMap<String, Any> = HashMap()
         configs[AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG] = bootstrapAddress
         return KafkaAdmin(configs)
     }
 
-    @Bean
+//    @Bean
     fun topic1(): NewTopic {
         return NewTopic("baeldung", 1, 1.toShort())
     }

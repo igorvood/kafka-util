@@ -2,19 +2,20 @@ package ru.vood.kafka.tools.kafkautil.topicUtil
 
 import org.apache.kafka.clients.admin.Admin
 import org.apache.kafka.clients.admin.NewTopic
+import org.springframework.kafka.core.KafkaAdmin
 import org.springframework.stereotype.Service
 
 @Service
 class TopicService(
-    val kafkaAdmin: Admin
+    val kafkaAdmin: KafkaAdmin
 ) {
 
     fun create(topicProperty: List<NewTopic>) {
-        kafkaAdmin.createTopics(topicProperty)
+        kafkaAdmin.createOrModifyTopics(*topicProperty.toTypedArray())
     }
 
     fun delete(topicProperty: List<String>) {
-        kafkaAdmin.deleteTopics(topicProperty)
+        kafkaAdmin.describeTopics(*topicProperty.toTypedArray())
     }
 
 }

@@ -20,14 +20,15 @@ spring:
 kafka:
   bootstrapAddress: 172.29.52.194:9092
 
-load:
-  source:
-    TestTopic: C:\_Develop\temp\kafka-util\src\main\resources\FilesForTopic
+#load:
+#  source:
+#    TestTopic: C:\_Develop\temp\kafka-util\src\main\resources\FilesForTopic
 
-topic:
-  create:
-    - t1
-    - t2
-  delete:
-    - q1
-    - q2
+#topic:
+#  create:
+#    - name: t1
+#      numPartitions: 1
+#      replicationFactor: 1
+#  delete:
+#    - q1
+#    - q2
