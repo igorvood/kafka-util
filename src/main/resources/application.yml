@@ -21,9 +21,13 @@ kafka:
   bootstrapAddress: 172.29.52.194:9092
 
 load:
-  str:
-    qw: qw
-    er: qw
   source:
     TestTopic: C:\_Develop\temp\kafka-util\src\main\resources\FilesForTopic
 
+topic:
+  create:
+    - t1
+    - t2
+  delete:
+    - q1
+    - q2
