@@ -1,0 +1,15 @@
+{
+  "id": "daa2d142-ab81-30f5-9ba0-5e50772012c2",
+  "date": "2021-11-14",
+  "rates": [
+    {
+      "currency": {
+        "name": "Доллар США",
+        "numericCode": "840",
+        "alphaCode": "USD"
+      },
+      "price": 4.3978,
+      "scale": 1
+    }
+  ]
+}

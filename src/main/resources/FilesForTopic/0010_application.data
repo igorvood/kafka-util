@@ -1,0 +1,13 @@
+{
+  "id" : "1",
+  "isActive" : true,
+  "filterRule" : {
+    "tagPrefix" : "qw",
+    "fieldName" : "fieldName1",
+    "operandClass" : {
+      "type" : "StringOperand",
+      "value" : "aws"
+    },
+    "operator" : "null"
+  }
+}

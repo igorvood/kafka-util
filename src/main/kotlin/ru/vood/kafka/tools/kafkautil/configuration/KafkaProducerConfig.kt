@@ -21,7 +21,7 @@ class KafkaProducerConfig {
     private var bootstrapAddress: String = "null"
 
     @Bean
-    fun producerFactory(): ProducerFactory<String, String> {
+    fun producerFactory(): ProducerFactory<String?, String> {
         val configProps: MutableMap<String, Any> = HashMap()
         configProps[ProducerConfig.BOOTSTRAP_SERVERS_CONFIG] = bootstrapAddress
         configProps[ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG] = StringSerializer::class.java
@@ -30,7 +30,7 @@ class KafkaProducerConfig {
     }
 
     @Bean
-    fun kafkaTemplate(): KafkaTemplate<String, String> {
+    fun kafkaTemplate(): KafkaTemplate<String?, String> {
         return KafkaTemplate(producerFactory())
     }
 }

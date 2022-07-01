@@ -18,12 +18,17 @@ spring:
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
 kafka:
-  bootstrapAddress: 172.29.52.194:9092
+  bootstrapAddress: 192.168.227.60:9092,192.168.227.60:9091
 
 #load:
 #  source:
-#    TestTopic: C:\_Develop\temp\kafka-util\src\main\resources\FilesForTopic
-
+#    filterTopic: C:\Work\temp\kafka-util\src\main\resources\FilesForTopic
+load:
+  source:
+#    rate-topic: C:\Work\temp\kafka-util\src\main\resources\rates
+#    main-topic: C:\Work\temp\kafka-util\src\main\resources\rateReq
+    rate_in_1: C:\Work\temp\kafka-util\src\main\resources\enrichRate
+#    DEV.OUTER.CBR.RATES: C:\Work\temp\kafka-util\src\main\resources\enrichRate
 #topic:
 #  create:
 #    - name: t1
