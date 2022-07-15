@@ -13,9 +13,13 @@ class MessageProducer(
 ) : MessageProducerInterface<String, String> {
 
     override fun sendMessage(topicName: String, key: String?, message: String) {
+        println(1)
+
         val future: ListenableFuture<SendResult<String?, String>> =
             Optional.ofNullable(key).map { k -> kafkaTemplate.send(topicName, k, message) }
-                .orElseGet { kafkaTemplate.send(topicName, message) }
+                .orElseGet { val send = kafkaTemplate.send(topicName, message)
+                    send
+                }
 //        val future = kafkaTemplate.send(topicName, key, message)
         future.addCallback(object : ListenableFutureCallback<SendResult<String?, String>> {
             override fun onSuccess(result: SendResult<String?, String>?) {

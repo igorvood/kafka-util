@@ -2,7 +2,8 @@ spring:
   kafka:
     security:
       protocol: "PLAINTEXT"
-    bootstrap-servers: localhost:9093
+#    bootstrap-servers: localhost:9093
+    bootstrap-servers: localhost:29092,localhost:39092
 #    ssl:
 #      trust-store-location: classpath:/client-certs/kafka.client.truststore.jks
 #      trust-store-password: password
@@ -18,13 +19,16 @@ spring:
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
 kafka:
-  bootstrapAddress: 192.168.227.60:9092,192.168.227.60:9091
+#  bootstrapAddress: 192.168.227.60:9092,192.168.227.60:9091
+  bootstrapAddress: localhost:29092,localhost:39092
 
 #load:
 #  source:
 #    filterTopic: C:\Work\temp\kafka-util\src\main\resources\FilesForTopic
 #load:
 #  source:
+#    rate-topic: /home/vood/IdeaProjects/kafka-util/src/main/resources/rates
+
 #    rate-topic: C:\Work\temp\kafka-util\src\main\resources\rates
 #    main-topic: C:\Work\temp\kafka-util\src\main\resources\rateReq
 #    rate_in_1: C:\Work\temp\kafka-util\src\main\resources\enrichRate
@@ -36,6 +40,6 @@ topic:
     names:
       - t1
       - t2
-  delete:
-    - q1
-    - q2
+#  delete:
+#    - q1
+#    - q2

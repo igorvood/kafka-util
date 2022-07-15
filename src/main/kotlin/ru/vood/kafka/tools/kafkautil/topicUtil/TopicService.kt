@@ -14,6 +14,7 @@ class TopicService(
     }
 
     fun delete(topicProperty: List<String>) {
+        kafkaAdmin.describeTopics()
         kafkaAdmin.describeTopics(*topicProperty.toTypedArray())
     }
 
