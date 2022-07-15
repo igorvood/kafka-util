@@ -2,13 +2,18 @@ spring:
   kafka:
     security:
       protocol: "PLAINTEXT"
-#    bootstrap-servers: localhost:9093
-    bootstrap-servers: localhost:29092,localhost:39092
-#    ssl:
-#      trust-store-location: classpath:/client-certs/kafka.client.truststore.jks
-#      trust-store-password: password
-#      key-store-location:  classpath:/client-certs/kafka.client.keystore.jks
-#      key-store-password: password
+#      protocol: "SSL"
+    bootstrap-servers: localhost:9093
+#    bootstrap-servers: localhost:29092,localhost:39092
+#    bootstrap-servers: d5uasp-apc003lk.corp.dev.vtb:9092,d5uasp-apc003lk.corp.dev.vtb:9092,d5uasp-apc004lk.corp.dev.vtb:9092,d5uasp-apc018lk.corp.dev.vtb:9092,d5uasp-apc025lk.corp.dev.vtb:9092
+    ssl:
+
+      trust-store-password: kafkauasppassword
+      key-store-password: kafkauasppassword
+      key-password: kafkauasppassword
+      key-store-location:  classpath:kafka-trust.pfx
+      trust-store-location: classpath:APD00.13.01-USBP-kafka-cluster-uasp.pfx
+
     consumer:
       group-id: demo-group-id
       auto-offset-reset: earliest
@@ -35,8 +40,8 @@ kafka:
 #    DEV.OUTER.CBR.RATES: C:\Work\temp\kafka-util\src\main\resources\enrichRate
 topic:
   create:
-    numPartitions: 1
-    replicationFactor: 1
+    numPartitions: 3
+    replicationFactor: 2
     names:
       - t1
       - t2
