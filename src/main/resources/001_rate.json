@@ -1,0 +1,312 @@
+{
+  "id": "daa2d142-ab81-30f5-9ba0-5e50772012c2",
+  "date": "2021-11-10",
+  "rates": [
+    {
+      "currency": {
+        "name": "Австралийский доллар",
+        "numericCode": "036",
+        "alphaCode": "AUD"
+      },
+      "price": 55.6634,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Азербайджанский манат",
+        "numericCode": "944",
+        "alphaCode": "AZN"
+      },
+      "price": 44.9663,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Фунт стерлингов Соединенного королевства",
+        "numericCode": "826",
+        "alphaCode": "GBP"
+      },
+      "price": 100.9597,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Армянских драмов",
+        "numericCode": "051",
+        "alphaCode": "AMD"
+      },
+      "price": 15.4824,
+      "scale": 100
+    },
+    {
+      "currency": {
+        "name": "Белорусский рубль",
+        "numericCode": "933",
+        "alphaCode": "BYN"
+      },
+      "price": 29.8966,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Болгарский лев",
+        "numericCode": "975",
+        "alphaCode": "BGN"
+      },
+      "price": 46.2316,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Бразильский реал",
+        "numericCode": "986",
+        "alphaCode": "BRL"
+      },
+      "price": 14.1843,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Венгерских форинтов",
+        "numericCode": "348",
+        "alphaCode": "HUF"
+      },
+      "price": 25.23,
+      "scale": 100
+    },
+    {
+      "currency": {
+        "name": "Гонконгских долларов",
+        "numericCode": "344",
+        "alphaCode": "HKD"
+      },
+      "price": 98.5358,
+      "scale": 10
+    },
+    {
+      "currency": {
+        "name": "Датская крона",
+        "numericCode": "208",
+        "alphaCode": "DKK"
+      },
+      "price": 12.1411,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Доллар США",
+        "numericCode": "840",
+        "alphaCode": "USD"
+      },
+      "price": 76.3978,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Евро",
+        "numericCode": "978",
+        "alphaCode": "EUR"
+      },
+      "price": 90.3557,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Индийских рупий",
+        "numericCode": "356",
+        "alphaCode": "INR"
+      },
+      "price": 10.3014,
+      "scale": 10
+    },
+    {
+      "currency": {
+        "name": "Казахстанских тенге",
+        "numericCode": "398",
+        "alphaCode": "KZT"
+      },
+      "price": 17.8067,
+      "scale": 100
+    },
+    {
+      "currency": {
+        "name": "Канадский доллар",
+        "numericCode": "124",
+        "alphaCode": "CAD"
+      },
+      "price": 58.7179,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Киргизских сомов",
+        "numericCode": "417",
+        "alphaCode": "KGS"
+      },
+      "price": 91.1196,
+      "scale": 100
+    },
+    {
+      "currency": {
+        "name": "Китайский юань",
+        "numericCode": "156",
+        "alphaCode": "CNY"
+      },
+      "price": 11.5689,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Молдавских леев",
+        "numericCode": "498",
+        "alphaCode": "MDL"
+      },
+      "price": 44.6771,
+      "scale": 10
+    },
+    {
+      "currency": {
+        "name": "Норвежских крон",
+        "numericCode": "578",
+        "alphaCode": "NOK"
+      },
+      "price": 84.8544,
+      "scale": 10
+    },
+    {
+      "currency": {
+        "name": "Польский злотый",
+        "numericCode": "985",
+        "alphaCode": "PLN"
+      },
+      "price": 20.1758,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Румынский лей",
+        "numericCode": "946",
+        "alphaCode": "RON"
+      },
+      "price": 18.5828,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "СДР (специальные права заимствования)",
+        "numericCode": "960",
+        "alphaCode": "XDR"
+      },
+      "price": 108.8592,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Сингапурский доллар",
+        "numericCode": "702",
+        "alphaCode": "SGD"
+      },
+      "price": 56.7507,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Таджикских сомони",
+        "numericCode": "972",
+        "alphaCode": "TJS"
+      },
+      "price": 67.4445,
+      "scale": 10
+    },
+    {
+      "currency": {
+        "name": "Турецких лир",
+        "numericCode": "949",
+        "alphaCode": "TRY"
+      },
+      "price": 92.7428,
+      "scale": 10
+    },
+    {
+      "currency": {
+        "name": "Новый туркменский манат",
+        "numericCode": "934",
+        "alphaCode": "TMT"
+      },
+      "price": 21.8592,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Узбекских сумов",
+        "numericCode": "860",
+        "alphaCode": "UZS"
+      },
+      "price": 73.7359,
+      "scale": 10000
+    },
+    {
+      "currency": {
+        "name": "Украинских гривен",
+        "numericCode": "980",
+        "alphaCode": "UAH"
+      },
+      "price": 27.1854,
+      "scale": 10
+    },
+    {
+      "currency": {
+        "name": "Чешских крон",
+        "numericCode": "203",
+        "alphaCode": "CZK"
+      },
+      "price": 34.1443,
+      "scale": 10
+    },
+    {
+      "currency": {
+        "name": "Шведских крон",
+        "numericCode": "752",
+        "alphaCode": "SEK"
+      },
+      "price": 88.6563,
+      "scale": 10
+    },
+    {
+      "currency": {
+        "name": "Швейцарский франк",
+        "numericCode": "756",
+        "alphaCode": "CHF"
+      },
+      "price": 83.6961,
+      "scale": 1
+    },
+    {
+      "currency": {
+        "name": "Южноафриканских рэндов",
+        "numericCode": "710",
+        "alphaCode": "ZAR"
+      },
+      "price": 49.5167,
+      "scale": 10
+    },
+    {
+      "currency": {
+        "name": "Вон Республики Корея",
+        "numericCode": "410",
+        "alphaCode": "KRW"
+      },
+      "price": 68.5394,
+      "scale": 1000
+    },
+    {
+      "currency": {
+        "name": "Японских иен",
+        "numericCode": "392",
+        "alphaCode": "JPY"
+      },
+      "price": 72.7217,
+      "scale": 100
+    }
+  ]
+}

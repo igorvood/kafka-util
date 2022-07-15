@@ -1,0 +1,9 @@
+{
+  "enrichDto": {
+    "id": "1d",
+    "currency": "USD",
+    "date": "2021-11-15"
+  },
+  "rate": 4.3978,
+  "count": 1
+}

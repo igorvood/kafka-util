@@ -25,7 +25,7 @@ class TopicFiller(
         }.toSet()
 
 
-        data.forEach { d -> messageProducer.sendMessage(d.topic, d.key, d.message) }
+        data.forEach { d -> messageProducer.sendMessage(d.topic, null, d.message) }
 
 
     }
