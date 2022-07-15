@@ -8,6 +8,6 @@ typealias TopicName = String
 @Component
 @ConfigurationProperties(prefix = "load")
 data class SourceByTopic(
-    var source: Map<String, SourceFolder> = HashMap<String, SourceFolder>(),
+    var source: Map<String, SourceFolder> = HashMap(),
 
     )

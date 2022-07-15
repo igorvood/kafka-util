@@ -1,6 +1,5 @@
 package ru.vood.kafka.tools.kafkautil.topicUtil
 
-import org.apache.kafka.clients.admin.Admin
 import org.apache.kafka.clients.admin.NewTopic
 import org.springframework.kafka.core.KafkaAdmin
 import org.springframework.stereotype.Service

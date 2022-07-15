@@ -23,17 +23,19 @@ kafka:
 #load:
 #  source:
 #    filterTopic: C:\Work\temp\kafka-util\src\main\resources\FilesForTopic
-load:
-  source:
+#load:
+#  source:
 #    rate-topic: C:\Work\temp\kafka-util\src\main\resources\rates
 #    main-topic: C:\Work\temp\kafka-util\src\main\resources\rateReq
-    rate_in_1: C:\Work\temp\kafka-util\src\main\resources\enrichRate
+#    rate_in_1: C:\Work\temp\kafka-util\src\main\resources\enrichRate
 #    DEV.OUTER.CBR.RATES: C:\Work\temp\kafka-util\src\main\resources\enrichRate
-#topic:
-#  create:
-#    - name: t1
-#      numPartitions: 1
-#      replicationFactor: 1
-#  delete:
-#    - q1
-#    - q2
+topic:
+  create:
+    numPartitions: 1
+    replicationFactor: 1
+    names:
+      - t1
+      - t2
+  delete:
+    - q1
+    - q2

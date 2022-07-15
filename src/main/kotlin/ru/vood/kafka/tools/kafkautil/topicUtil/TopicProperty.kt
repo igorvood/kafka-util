@@ -1,17 +1,28 @@
 package ru.vood.kafka.tools.kafkautil.topicUtil
 
-import org.apache.kafka.clients.admin.NewTopic
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.stereotype.Component
+import java.util.*
 
 @Component
 @ConfigurationProperties(prefix = "topic")
 data class TopicProperty(
-    var create: List<NewTopic> = listOf(),
+    var create: CreateTopics? = null,
     var delete: List<String> = listOf()
 ) {
+
     init {
-        val filter = create.map { it.name() }.filter { delete.contains(it) }
-        assert(filter.isEmpty()) { "создавайемы и удаляемые очереди не должны совпадать, пересечение множеств $filter" }
+        Optional.ofNullable(create)
+            .map { cr -> cr.names.filter { delete.contains(it) } }
+            .map { assert(it.isEmpty()) { "создавайемы и удаляемые очереди не должны совпадать, пересечение множеств $it" } }
+
     }
+
+    data class CreateTopics(
+
+        var numPartitions: Int,
+        var replicationFactor: Short,
+        var names: List<String>
+    )
+
 }

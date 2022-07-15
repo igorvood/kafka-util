@@ -1,7 +1,9 @@
 package ru.vood.kafka.tools.kafkautil.topicUtil
 
+import org.apache.kafka.clients.admin.NewTopic
 import org.springframework.boot.CommandLineRunner
 import org.springframework.stereotype.Service
+import java.util.*
 
 @Service
 class AdminTopicService(
@@ -10,7 +12,13 @@ class AdminTopicService(
 ) : CommandLineRunner {
 
     override fun run(vararg args: String?) {
-        topicService.create(topicProperty.create)
+        val create = topicProperty.create
+        Optional.ofNullable(create)
+            .map { cr ->
+                val newTopics = cr.names.map { NewTopic(it, cr.numPartitions, cr.replicationFactor) }
+                topicService.create(newTopics)
+            }
+
         topicService.delete(topicProperty.delete)
     }
 }
